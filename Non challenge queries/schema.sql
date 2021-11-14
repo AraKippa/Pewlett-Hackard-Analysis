@@ -162,7 +162,7 @@ SELECT ri.emp_no,
     ri.first_name,
     ri.last_name,
 de.to_date
---INTO current_emp
+INTO current_emp
 FROM retirement_info as ri
 LEFT JOIN dept_emp as de
 ON ri.emp_no = de.emp_no
@@ -217,7 +217,7 @@ SELECT  dm.dept_no,
         ce.first_name,
         dm.from_date,
         dm.to_date
---INTO manager_info
+INTO manager_info
 FROM dept_manager AS dm
     INNER JOIN departments AS d
         ON (dm.dept_no = d.dept_no)
